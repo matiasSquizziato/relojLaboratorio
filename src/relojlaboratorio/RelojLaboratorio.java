@@ -10,6 +10,7 @@ package relojlaboratorio;
  */
 public class RelojLaboratorio {
 
+<<<<<<< HEAD
 
     public static void main(String[] args) {
 
@@ -25,6 +26,13 @@ public class RelojLaboratorio {
 
 
 
+=======
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+>>>>>>> b19b0c9459c22e19cb1609255b32fa2489af483c
     }
     
 }
