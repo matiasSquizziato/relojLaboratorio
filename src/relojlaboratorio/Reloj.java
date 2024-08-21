@@ -53,7 +53,10 @@ public class Reloj {
                 '}';
     }
 
+<<<<<<< HEAD
     //Metodo para el set del dia y la hora (el dia con fecha y nombre)
+=======
+>>>>>>> 7d537cd58edb6ada8c1971d1ace3923f51cc0e6e
     public static void seteoHoraDia(Reloj reloj){
 
         LocalDate fechaAct = LocalDate.now();
@@ -68,9 +71,13 @@ public class Reloj {
 
     public String  mostrarDia(){
 
+<<<<<<< HEAD
         LocalDate hoy = LocalDate.now();
 
         return dia + " | " + hoy ;
+=======
+        return dia;
+>>>>>>> 7d537cd58edb6ada8c1971d1ace3923f51cc0e6e
 
     }
 
@@ -80,6 +87,7 @@ public class Reloj {
 
     }
 
+<<<<<<< HEAD
     public void incrementarDia(int incrementoDay) {
 
         LocalDate fechaAct = LocalDate.now();
@@ -88,6 +96,8 @@ public class Reloj {
 
     }
 
+=======
+>>>>>>> 7d537cd58edb6ada8c1971d1ace3923f51cc0e6e
 
 
 }
