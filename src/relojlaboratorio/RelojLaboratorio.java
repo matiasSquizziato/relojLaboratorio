@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package relojlaboratorio;
 
 /**
@@ -9,7 +5,6 @@ package relojlaboratorio;
  * @author matiSqui
  */
 public class RelojLaboratorio {
-
 
     public static void main(String[] args) {
 
@@ -20,11 +15,17 @@ public class RelojLaboratorio {
         Reloj.seteoHoraDia(rolej);
 
         System.out.println("Hoy es: " + rolej.mostrarDia());
-        System.out.println("La hora: " + rolej.mostrarHora() );
+        System.out.println("La hora: " + rolej.mostrarHora() + "hs" );
 
+        //Incremento de dias
+        System.out.println("El reloj incrementa en 1 dia");
+        rolej.incrementarDia(1);
 
 
 
     }
-    
+
+
+
+
 }
