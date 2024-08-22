@@ -21,10 +21,10 @@ public class RelojLaboratorio {
         System.out.println("El reloj incrementa en 1 dia");
         rolej.incrementarDia(1);
 
+        //Incremento de dias
 
 
     }
-
 
 
 

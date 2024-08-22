@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package relojlaboratorio;
 
 import java.time.LocalDate;
@@ -12,7 +8,6 @@ public class Reloj {
     private String dia;
     private int hora;
     private String modelo;
-    //private numSerie long;
 
     public Reloj(String dia, int hora, String modelo) {
         this.dia = dia;
@@ -53,52 +48,27 @@ public class Reloj {
                 '}';
     }
 
-<<<<<<< HEAD
-    //Metodo para el set del dia y la hora (el dia con fecha y nombre)
-=======
->>>>>>> 7d537cd58edb6ada8c1971d1ace3923f51cc0e6e
     public static void seteoHoraDia(Reloj reloj){
-
         LocalDate fechaAct = LocalDate.now();
         LocalTime horaAct = LocalTime.now();
 
         reloj.setDia(fechaAct.getDayOfWeek().name());
         reloj.setHora(horaAct.getHour());
-
-
     }
 
-
-    public String  mostrarDia(){
-
-<<<<<<< HEAD
+    public String mostrarDia(){
         LocalDate hoy = LocalDate.now();
-
-        return dia + " | " + hoy ;
-=======
-        return dia;
->>>>>>> 7d537cd58edb6ada8c1971d1ace3923f51cc0e6e
-
+        return dia + " | " + hoy;
     }
 
     public int mostrarHora(){
-
         return hora;
-
     }
 
-<<<<<<< HEAD
     public void incrementarDia(int incrementoDay) {
-
         LocalDate fechaAct = LocalDate.now();
-
         System.out.println(fechaAct.plusDays(incrementoDay));
-
     }
-
-=======
->>>>>>> 7d537cd58edb6ada8c1971d1ace3923f51cc0e6e
-
-
 }
+
 
