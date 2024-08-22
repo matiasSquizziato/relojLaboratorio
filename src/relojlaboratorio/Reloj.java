@@ -54,6 +54,8 @@ public class Reloj {
 
         reloj.setDia(fechaAct.getDayOfWeek().name());
         reloj.setHora(horaAct.getHour());
+
+
     }
 
     public String mostrarDia(){
@@ -61,14 +63,30 @@ public class Reloj {
         return dia + " | " + hoy;
     }
 
-    public int mostrarHora(){
-        return hora;
+    public void mostrarHora(){
+        LocalTime horaAct = LocalTime.now();
+        LocalTime localTime = horaAct.plusHours(0);
+
+        System.out.println(horaAct);
+
     }
 
-    public void incrementarDia(int incrementoDay) {
+    public void incrementarDia(int incrementoDia) {
         LocalDate fechaAct = LocalDate.now();
-        System.out.println(fechaAct.plusDays(incrementoDay));
+        System.out.println(fechaAct.plusDays(incrementoDia));
     }
+
+    public void incrementarHoras(int inrementoHoras){
+
+        LocalTime horaAct = LocalTime.now();
+        LocalTime horaPlusPlus = horaAct.plusHours(inrementoHoras);
+
+        System.out.println("Hora incrementada: " + horaPlusPlus);
+
+    }
+
+
+
 }
 
 

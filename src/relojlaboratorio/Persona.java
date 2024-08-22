@@ -59,6 +59,17 @@ public class Persona {
         this.relojN = relojN;
     }
 
+    //Metodos
+
+    public void decirHora(){
+
+        if (relojN != null){
+            System.out.println("La hora actual es: " + relojN.getHora());
+        }else {
+            System.out.println("No tengo reloj");
+        }
+
+    }
 
 
 }
