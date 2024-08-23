@@ -8,7 +8,7 @@ public class RelojLaboratorio {
 
     public static void main(String[] args) {
 
-        Reloj rolej = new Reloj("lll",00,"n3541");
+        Reloj rolej = new Reloj("lll",00,"n3541", 123456789);
 
         Persona pers = new Persona("Matias", "Squi", 24, 170,rolej);
 
@@ -38,9 +38,15 @@ public class RelojLaboratorio {
 
        
 
-
+        //Reloj Fir
+    RelojFit myFit = new RelojFit("222", 11, "Xiaomi", 23456789);
+        myFit.cargarPasos();
+        double pasos = myFit.cuentaPasos(2, 2, 5, 6);
+        System.out.println("La cantidad de pasos es: " + pasos);
+        
     }
 
+    
 
 
 }

@@ -8,11 +8,15 @@ public class Reloj {
     private String dia;
     private int hora;
     private String modelo;
+    private long numeroDeSerie;
 
-    public Reloj(String dia, int hora, String modelo) {
+   
+
+    public Reloj(String dia, int hora, String modelo, long numeroDeSerie) {
         this.dia = dia;
         this.hora = hora;
         this.modelo = modelo;
+        this.numeroDeSerie = numeroDeSerie;
     }
 
     public String getDia() {
@@ -37,6 +41,14 @@ public class Reloj {
 
     public void setModelo(String modelo) {
         this.modelo = modelo;
+    }
+
+    public long getNumeroDeSerie() {
+        return numeroDeSerie;
+    }
+
+    public void setNumeroDeSerie(long numeroDeSerie) {
+        this.numeroDeSerie = numeroDeSerie;
     }
 
     @Override
