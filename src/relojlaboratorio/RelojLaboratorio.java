@@ -1,5 +1,7 @@
 package relojlaboratorio;
 
+import java.time.LocalTime;
+
 /**
  *
  * @author matiSqui
@@ -33,10 +35,16 @@ public class RelojLaboratorio {
 
         //Incremento de horas
         System.out.println("Las horas se incrementaron en 1");
-        rolej.incrementarHoras(1);
+        System.out.println(rolej.incrementarHoras(1));
         System.out.println("-------------------------------------");
 
-       
+        //Metodo comer
+        //Para pasar por parametro el incremento de horas para poder comer
+        //Debemos incrementamos las horas y se podra comer (no se permiten numeros negativos)
+        LocalTime Hora = rolej.incrementarHoras(1);
+        System.out.println("es momento para..");
+        pers.metodComer(Hora);
+        
 
         //Reloj Fir
     RelojFit myFit = new RelojFit("222", 11, "Xiaomi", 23456789);

@@ -2,6 +2,8 @@
 package relojlaboratorio;
 
 
+import java.time.LocalTime;
+
 public class Persona {
 
 
@@ -71,5 +73,12 @@ public class Persona {
 
     }
 
+    public void metodComer(LocalTime nHora) {
+        if (nHora.getHour() == 12 || nHora.getHour() == 23) {
+            System.out.println("COMER!!");
+        } else {
+            System.out.println("seguir trabajando...  :( ");
+        }
+    }
 
 }

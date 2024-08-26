@@ -88,12 +88,12 @@ public class Reloj {
         System.out.println(fechaAct.plusDays(incrementoDia));
     }
 
-    public void incrementarHoras(int inrementoHoras){
+    public LocalTime incrementarHoras(int inrementoHoras){
 
         LocalTime horaAct = LocalTime.now();
         LocalTime horaPlusPlus = horaAct.plusHours(inrementoHoras);
 
-        System.out.println("Hora incrementada: " + horaPlusPlus);
+       return horaPlusPlus;
 
     }
 
